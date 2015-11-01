@@ -1,6 +1,6 @@
 " Browsing/searching files/buffers
 NeoBundle 'jeetsukumaran/vim-buffergator'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mileszs/ack.vim'
 
