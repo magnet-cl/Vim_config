@@ -52,7 +52,6 @@ NeoBundle 'altercation/vim-colors-solarized'
 
 " Others
 NeoBundle 'smancill/conky-syntax.vim'
-NeoBundle 'smancill/send_evernote.vim'
 
 " Jade
 NeoBundle 'digitaltoad/vim-jade'

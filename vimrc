@@ -141,10 +141,6 @@ let g:Tex_IgnoredWarnings="Underfull\n".
 " Fix e-acute problem in insert mode
 imap   <buffer>   <C-L>i  <Plug>Tex_InsertItemOnThisLine
 
-" Send to Evernote                          {{{2
-let g:evernote_gmail_username = "smancill.m"
-let g:evernote_email_local_part  = "smancill.d0477"
-
 " Buffergator                               {{{2
 nnoremap <silent>  M              :BuffergatorOpen<CR>
 nnoremap <silent>  <leader>m      :BuffergatorTabsOpen<CR>
