@@ -27,11 +27,11 @@ setlocal errorformat=                       " Read python errors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Execute a selection of code
-python << EOL
-import vim
-def EvaluateCurrentRange():
-    eval(compile('\n'.join(vim.current.range),'','exec'),globals())
-EOL
+" python << EOL
+" import vim
+" def EvaluateCurrentRange():
+"     eval(compile('\n'.join(vim.current.range),'','exec'),globals())
+" EOL
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
