@@ -93,8 +93,10 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_config_file = '.clang_complete'
 let g:syntastic_c_config_file = '.clang_complete'
-let g:syntastic_javascript_checkers = ['jscs', 'jshint', 'eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint'
+let g:syntastic_javascript_checkers = ['eslint', 'jscs', 'jshint']
+" eslint exec to work without eslint globally installed
+let g:syntastic_javascript_eslint_exec = '/bin/ls'
+" " eslint exe pointing to the local installation of eslint
 let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_python_checkers = ['flake8']
