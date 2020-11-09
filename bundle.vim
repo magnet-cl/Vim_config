@@ -96,6 +96,8 @@ Plug 'https://github.com/mileszs/ack.vim'
 if g:vim_config_has_ag
   let g:ackprg = 'ag --hidden --ignore .git --vimgrep'
 endif
+
+nnoremap  <Leader>/     :Ack!<Space>
 " }}}
 
 " Airline                                   {{{2
@@ -147,7 +149,7 @@ endif
 let g:UltiSnipsJumpForwardTrigger = '<TAB>'
 let g:UltiSnipsJumpBackwardTrigger = '<S-TAB>'
 let g:UltiSnipsEditSplit = 'context'
-if g:vim_config_has_private_dir
+if $VIM_CONFIG_LOAD_PRIVATE_RC == '1' && isdirectory($VIM_CONFIG_HOME . '/private')
   let g:UltiSnipsSnippetsDir = $VIM_CONFIG_HOME . '/private/UltiSnips'
 endif
 " }}}
@@ -291,8 +293,7 @@ let g:vimtex_compiler_latexmk = {
   \ 'continous': 0,
   \ }
 let g:vimtex_echo_ignore_wait = 1
-let g:vimtex_quickfix_ignore_all_warnings = 0
-let g:vimtex_quickfix_ignored_warnings = [
+let g:vimtex_quickfix_ignore_filters = [
   \ 'Underfull',
   \ 'Overfull',
   \ 'specifier changed to',
